@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const reveals = document.querySelectorAll(".reveal");
 
-  const revealOnScroll = () => {
+  const reveal = () => {
     reveals.forEach(el => {
       const top = el.getBoundingClientRect().top;
       if (top < window.innerHeight - 100) {
@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Reveal immediately on load
-  revealOnScroll();
-
-  // Reveal on scroll
-  window.addEventListener("scroll", revealOnScroll);
+  reveal();
+  window.addEventListener("scroll", reveal);
 });
