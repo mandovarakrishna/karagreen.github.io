@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Karagreen | Clean Industrial Biomass Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ✅ Correct CSS order -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+
   <script defer src="js/animations.js"></script>
 </head>
 <body>
@@ -24,46 +29,49 @@
 
 <main>
 
+  <!-- ✅ SINGLE HERO SECTION -->
   <section class="hero reveal">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <img src="assets/logo.png" class="hero-logo">
-    <h1>Clean Industrial Energy from Agricultural Waste</h1>
-    <p>High-grade biomass pellets for reliable fuel transition</p>
-  </div>
-</section>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/logo.png" class="hero-logo">
+      <h1>Clean Industrial Energy from Agricultural Waste</h1>
+      <p>High-grade biomass pellets for reliable fuel transition</p>
+    </div>
+  </section>
 
-<section class="hero reveal">
-  <div class="container">
-    <h1>Transforming Agricultural Waste into Clean Industrial Fuel</h1>
-    <p>
-      Karagreen converts agricultural residue into high-grade biomass pellets,
-      enabling industries to transition away from coal reliably and sustainably.
-    </p>
-  </div>
-</section>
+  <!-- ✅ NORMAL CONTENT SECTION -->
+  <section class="section reveal">
+    <div class="container">
+      <h2>Transforming Agricultural Waste into Clean Industrial Fuel</h2>
+      <p>
+        Karagreen converts agricultural residue into high-grade biomass pellets,
+        enabling industries to transition away from coal reliably and sustainably.
+      </p>
+    </div>
+  </section>
 
-<section class="section reveal">
-  <div class="container grid-3">
-    <div class="card">
-      <h3>Waste to Energy</h3>
-      <p>Crop residue converted into standardized fuel.</p>
+  <!-- ✅ CARD GRID -->
+  <section class="section reveal">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Waste to Energy</h3>
+        <p>Crop residue converted into standardized industrial fuel.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Reliability</h3>
+        <p>Designed to integrate with real combustion systems.</p>
+      </div>
+      <div class="card">
+        <h3>Emission Reduction</h3>
+        <p>Lower ash, sulfur, and net carbon impact.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Industrial Reliability</h3>
-      <p>Designed for real combustion systems.</p>
-    </div>
-    <div class="card">
-      <h3>Emission Reduction</h3>
-      <p>Lower ash, sulfur and net carbon.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  <p>© KARAGreen | Clean Biomass Energy</p>
+  <p>© Karagreen | Clean Biomass Energy</p>
 </footer>
 
 </body>
