@@ -53,3 +53,53 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* =========================
+   HERO SECTION (CRITICAL)
+   ========================= */
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+
+  background-image: url("../assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 61, 46, 0.75);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.hero-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
