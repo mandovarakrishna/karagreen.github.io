@@ -1,3 +1,4 @@
+/* NAVBAR */
 .navbar {
   background: #0f3d2e;
   padding: 14px 0;
@@ -14,7 +15,7 @@
 }
 
 .navbar a {
-  color: #fff;
+  color: #ffffff;
   margin-left: 18px;
   text-decoration: none;
 }
@@ -25,59 +26,26 @@
   border-radius: 6px;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 30px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* =========================
-   HERO SECTION (CRITICAL)
-   ========================= */
-
+/* HERO */
 .hero {
   position: relative;
   width: 100vw;
   height: 85vh;
 
-  background-image: url("../assets/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../assets/hero-bg.jpg") center / cover no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  overflow: hidden;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 61, 46, 0.75);
+  background: linear-gradient(
+    rgba(15, 61, 46, 0.88),
+    rgba(15, 61, 46, 0.92)
+  );
 }
 
 .hero-content {
@@ -88,18 +56,61 @@
   padding: 0 20px;
 }
 
+.hero-logo {
+  width: 90px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
 .hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 12px;
-  line-height: 1.2;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
-  opacity: 0.95;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-.hero-logo {
-  width: 120px;
-  margin-bottom: 20px;
+.hero-points {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-points li {
+  margin: 8px 0;
+}
+
+/* CARDS */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }

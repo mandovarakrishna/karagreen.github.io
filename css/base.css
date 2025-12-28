@@ -12,9 +12,15 @@ main {
   flex: 1;
 }
 
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
 footer {
   background: #0f3d2e;
-  color: #ccc;
+  color: #cfd8d3;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;

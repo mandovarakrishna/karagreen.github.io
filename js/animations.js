@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const reveal = () => {
     reveals.forEach(el => {
-      const top = el.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
+      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
         el.classList.add("active");
       }
     });
